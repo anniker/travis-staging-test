@@ -1,7 +1,6 @@
-language: ruby
-rvm:
- - 2.2
- - jruby
-install: skip
-script:
-- bundle exec rake build
+os: linux
+rvm: 2.6.3
+jobs:
+  include:
+    - stage: "sleep 109"
+      script: sleep 10
